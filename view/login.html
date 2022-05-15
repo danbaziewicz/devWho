@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/login.css">
     <title>Login - devWho</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">Dev Who</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./cadastro.html">Cadastro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contato.html">Contato</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./login.html">Login</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand estiloSublinhado" href="../index.html">Dev Who</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link estiloSublinhado" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link estiloSublinhado" href="./cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link estiloSublinhado" href="./contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link estiloSublinhado" href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-    
+    </nav>
+
     <div class="container row row-cols-md-2 row-cols-sm-1">
         <div class="mb-3 col-sm-10 col-md-6 divImg">
             <img class="loginPageImg" src="./assets/images/loginPageImage.png" alt="imagem png pag de login">
         </div>
-        
+
         <form class="formStyle">
             <div class="mb-3 col-12">
                 <h3 class="tituloH3Login mt-4">Falta pouco para dar um BOOM na sua carreira!</h3>
@@ -53,15 +57,86 @@
             </div>
             <span><u class="esqueciSenha" id="esqueciSenha">Esqueci minha senha</u></span>
             <button type="submit" class="mt-3 btn btn-primary">Entrar</button>
-            <button type="submit" class="mt-3 btnRedesFB"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-</svg>Continuar com Facebook</button>
-<button type="submit" class="mt-3 btnRedesGoogle"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.64 9.20456C17.64 8.56637 17.5827 7.95274 17.4764 7.36365H9V10.845H13.8436C13.635 11.97 13.0009 12.9232 12.0477 13.5614V15.8196H14.9564C16.6582 14.2527 17.64 11.9455 17.64 9.20456Z" fill="#4285F4"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9 18C11.43 18 13.4673 17.1941 14.9564 15.8195L12.0477 13.5613C11.2418 14.1013 10.2109 14.4204 9 14.4204C6.65591 14.4204 4.67182 12.8372 3.96409 10.71H0.957275V13.0418C2.43818 15.9831 5.48182 18 9 18Z" fill="#34A853"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3.96409 10.7099C3.78409 10.1699 3.68182 9.59313 3.68182 8.99995C3.68182 8.40677 3.78409 7.82995 3.96409 7.28995V4.95813H0.957273C0.347727 6.17313 0 7.54768 0 8.99995C0 10.4522 0.347727 11.8268 0.957273 13.0418L3.96409 10.7099Z" fill="#FBBC05"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.57955C10.3214 3.57955 11.5077 4.03364 12.4405 4.92545L15.0218 2.34409C13.4632 0.891818 11.4259 0 9 0C5.48182 0 2.43818 2.01682 0.957275 4.95818L3.96409 7.29C4.67182 5.16273 6.65591 3.57955 9 3.57955Z" fill="#EA4335"></path></svg>Continuar com Google</button>
+            <button type="submit" class="mt-3 btnRedesFB"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>Continuar com Facebook</button>
+            <button type="submit" class="mt-3 btnRedesGoogle"><svg width="18" height="18" viewBox="0 0 18 18"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.64 9.20456C17.64 8.56637 17.5827 7.95274 17.4764 7.36365H9V10.845H13.8436C13.635 11.97 13.0009 12.9232 12.0477 13.5614V15.8196H14.9564C16.6582 14.2527 17.64 11.9455 17.64 9.20456Z"
+                        fill="#4285F4"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9 18C11.43 18 13.4673 17.1941 14.9564 15.8195L12.0477 13.5613C11.2418 14.1013 10.2109 14.4204 9 14.4204C6.65591 14.4204 4.67182 12.8372 3.96409 10.71H0.957275V13.0418C2.43818 15.9831 5.48182 18 9 18Z"
+                        fill="#34A853"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.96409 10.7099C3.78409 10.1699 3.68182 9.59313 3.68182 8.99995C3.68182 8.40677 3.78409 7.82995 3.96409 7.28995V4.95813H0.957273C0.347727 6.17313 0 7.54768 0 8.99995C0 10.4522 0.347727 11.8268 0.957273 13.0418L3.96409 10.7099Z"
+                        fill="#FBBC05"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9 3.57955C10.3214 3.57955 11.5077 4.03364 12.4405 4.92545L15.0218 2.34409C13.4632 0.891818 11.4259 0 9 0C5.48182 0 2.43818 2.01682 0.957275 4.95818L3.96409 7.29C4.67182 5.16273 6.65591 3.57955 9 3.57955Z"
+                        fill="#EA4335"></path>
+                </svg>Continuar com Google</button>
         </form>
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
+
+    <div class="d-flex flex-column h-100">
+
+        <!-- FOOTER -->
+        <footer class="w-100 py-4 flex-shrink-0 mt-3">
+            <div class="container py-4">
+                <div class="row gy-4 gx-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="h1 text-white">DW.</h5>
+                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt.</p>
+                        <p class="small text-muted mb-0">&copy; Copyrights. Todos os direitos reservados <a class="text-primary"
+                                href="#">https://github.com/danbaziewicz/devWho</a></p>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="text-white mb-3">Links rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="nav-link-footer" href="#">Home</a></li>
+                            <li><a class="nav-link-footer" href="#">Cadastro</a></li>
+                            <li><a class="nav-link-footer" href="#">Contato</a></li>
+                            <li><a class="nav-link-footer" href="#">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="text-white mb-3">Membros</h5>
+                        <ul class="navbar-nav">
+                            <li><a class="nav-link-footer" href="#">Alonso</a></li>
+                            <li><a class="nav-link-footer" href="#">Bárbara</a></li>
+                            <li><a class="nav-link-footer" href="#">Danylo</a></li>
+                            <li><a class="nav-link-footer" href="#">Edson</a></li>
+                            <li><a class="nav-link-footer" href="#">Letícia</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-3">Newsletter</h5>
+                        <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt.</p>
+                        <form action="#">
+                            <div class="input-group mb-3">
+                                <input class="form-control" type="text" placeholder="Registre-se na Newsletter"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-primary" id="button-addon2" type="button"><i></i>Registrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
