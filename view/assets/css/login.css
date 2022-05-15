@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+    color: #1a1b4b;
+}
+
+.divImg {
+    display: flex;
+    justify-content: center;
+}
+
+.loginPageImg {
+    width: 70%;
+}
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    border: 1px solid #1a1b4b;
+}
+
+.form-text {
+    color: #292a73;
+}
+
+.form-control:focus {
+    color: #1a1b4b;
+    background-color: #fff;
+    border-color: #3a9efd;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(58, 158, 253, 0.25);
+  }
+
+  .esqueciSenha {
+      cursor: pointer;
+  }
+
+.btn-primary {
+    color: #fff;
+    background-color: #1a1b4b;
+    border-color: #f7a400;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #292a73;
+    border-color: #f7a400;
+}
