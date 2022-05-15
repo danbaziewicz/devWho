@@ -6,6 +6,12 @@ body {
     width: 100%;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 ::-webkit-scrollbar {
     width: 0.5rem;
 }
