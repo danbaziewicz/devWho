@@ -2,7 +2,15 @@
 
 body,html{
     width: 100%;
-    font-family: 'Poppins', sans-serif
+    font-family: 'Poppins', sans-serif;
+    background-color: var(---terceiraCor);
+}
+:root{
+    ---primeiraCor: #f7a400;
+    ---segundaCor: #3a9efd;
+    ---terceiraCor: #c9cce8;
+    ---quartaCor: #292a73;
+    ---quintaCor: #1a1b4b;
 }
 .mentSoft{
     display: flex;
@@ -13,4 +21,8 @@ body,html{
 
 .descDetalhes{
     text-align: justify;
+}
+.planoTitulo{
+    background-color: var(---quartaCor);
+    color: white;
 }
