@@ -169,9 +169,9 @@ main {
 
 footer {
     background-color: #c9cce8;
-    position: relative;
+    position: fixed;
     bottom: 0;
-    left: 0;
+    margin-top: auto;
 }
 
 .nav-link-footer {
@@ -181,4 +181,10 @@ footer {
 
 .nav-link-footer:hover {
     color: #1a1b4b;
+}
+
+@media (max-height: 880px) {
+    footer {
+        position: relative;
+    }
 }
