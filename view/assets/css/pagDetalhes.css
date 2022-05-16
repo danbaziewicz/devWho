@@ -12,12 +12,6 @@ body,html{
     ---quartaCor: #292a73;
     ---quintaCor: #1a1b4b;
 }
-.mentSoft{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
 
 .descDetalhes{
     text-align: justify;
@@ -25,4 +19,36 @@ body,html{
 .planoTitulo{
     background-color: var(---quartaCor);
     color: white;
+}
+
+.butAssinar{
+    background-color: var(---primeiraCor);
+    border: none;
+    box-shadow: 0 0 1em var(---primeiraCor);
+}
+
+.butAssinar:hover{
+    background-color: var(---primeiraCor);
+    transform: scale(1.1);
+    border: none;
+    box-shadow:none;
+}
+main h1{
+    color: var(---quintaCor);
+    font-weight: 600;
+}
+
+main p{
+    color: var(---quartaCor);
+    font-weight: 400;
+}
+
+.titDetalhes{
+    color: var(---quintaCor);
+    font-weight: 600;
+}
+
+.subtitDetalhes{
+    color: var(---quartaCor);
+    font-weight: 400;
 }
