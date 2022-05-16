@@ -24,14 +24,13 @@ body,html{
 .butAssinar{
     background-color: var(---primeiraCor);
     border: none;
-    box-shadow: 0 0 1em var(---primeiraCor);
 }
 
 .butAssinar:hover{
     background-color: var(---primeiraCor);
     transform: scale(1.1);
     border: none;
-    box-shadow:none;
+    box-shadow: 0 0 1em var(---primeiraCor);
 }
 main h1{
     color: var(---quintaCor);
@@ -51,4 +50,8 @@ main p{
 .subtitDetalhes{
     color: var(---quartaCor);
     font-weight: 400;
+}
+.alinhamento{
+    display: flex;
+    justify-content: flex-end;
 }
