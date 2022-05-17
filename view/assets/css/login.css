@@ -4,6 +4,10 @@
 
 body {
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main {
@@ -28,18 +32,21 @@ main {
 }
 
 .navbar-light .navbar-brand {
-    color: #1a1b4b;
+    color: #f1f1f1!important;
+}
 
+.nav-link {
+    color: #f1f1f1!important;
 }
 
 .navbar-collapse {
     display: flex;
     justify-content: flex-end;
-    background-color: #c9cce8;
+    background-color: #1a1b4b;
 }
 
 .bg-light {
-    background-color: #c9cce8 !important;
+    background-color: #1a1b4b !important;
 }
 
 .estiloSublinhado {
@@ -169,7 +176,6 @@ main {
 
 footer {
     background-color: #c9cce8;
-    position: fixed;
     bottom: 0;
     margin-top: auto;
 }
@@ -181,10 +187,4 @@ footer {
 
 .nav-link-footer:hover {
     color: #1a1b4b;
-}
-
-@media (max-height: 880px) {
-    footer {
-        position: relative;
-    }
 }
