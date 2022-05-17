@@ -3,7 +3,6 @@
 body,html{
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color: var(---terceiraCor);
 }
 :root{
     ---primeiraCor: #f7a400;
