@@ -3,6 +3,7 @@
 body,html{
     width: 100%;
     font-family: 'Poppins', sans-serif;
+    background-color: #EDF2FB;
 }
 :root{
     ---primeiraCor: #f7a400;
@@ -17,7 +18,6 @@ body,html{
 }
 .planoTitulo{
     background-color: var(---quartaCor);
-    color: white;
 }
 
 .butAssinar{
