@@ -45,6 +45,10 @@ main {
     cursor: pointer;
 }
 
+.corTexto {
+    color: #1a1b4b!important;
+}
+
 .btn-submit {
     color: #fff;
     background-color: #292a73;
