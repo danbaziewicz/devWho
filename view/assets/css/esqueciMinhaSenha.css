@@ -1,0 +1,49 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recoverPageImg {
+    width: 70%;
+}
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    border: 1px solid #1a1b4b;
+}
+
+.form-text {
+    color: #c9cce8;
+}
+
+.form-control:focus {
+    color: #1a1b4b;
+    background-color: #fff;
+    border-color: #1a1b4b;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-submit {
+    color: #fff;
+    background-color: #292a73;
+    border-color: #1a1b4b;
+    width: 30%;
+    font-weight: 600;
+    transition: .2s;
+    border-radius: 4px;
+    height: 39px;
+}
+
+.btn-submit:hover {
+    color: #fff;
+    background-color: #1a1b4b;
+    border-color: #292a73;
+}
