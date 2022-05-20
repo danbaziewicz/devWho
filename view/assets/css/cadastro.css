@@ -4,13 +4,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.p-3{
-    background-color: #c9cce8;
-    color: black;
-}
-
 form {
-    background: #ecf0f3;
+    background-image:#ECF0F3;
     padding: 40px 30px 30px 30px;
 }
 
@@ -58,4 +53,68 @@ form {
 ::-webkit-scrollbar-thumb {
     background-color: #292a73;
     border-radius: 3rem;
+}
+.bg-light {
+    background-color: #1a1b4b !important;
+}
+
+.estiloSublinhado {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+.estiloSublinhado:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #f7a400;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.estiloSublinhado:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.navbar-light .navbar-brand {
+    color: #f1f1f1!important;
+}
+
+.nav-link {
+    color: #f1f1f1!important;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1a1b4b;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer {
+    background-color: #c9cce8;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.nav-link-footer {
+    color: #1a1b4b;
+    text-decoration: none;
+}
+
+.nav-link-footer:hover {
+    color: #1a1b4b;
 }
