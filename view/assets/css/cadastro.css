@@ -5,37 +5,39 @@
 }
 
 form {
-    background-image:#ECF0F3;
+    background-image: #ECF0F3;
     padding: 40px 30px 30px 30px;
 }
 
-.form-row{
+.form-row {
     max-width: 500px;
     min-height: 500px;
     margin: 80px auto;
-    padding: 40px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
     background-color: #ecf0f3;
     border-radius: 15px;
     box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
 }
 
-.form-group input{
-        width: 100%;
-        display: block;
-        border: none;
-        outline: none;
-        background: none;
-        font-size: 1rem;
-        color: #666;
-        padding: 10px 15px 10px 10px;
-        /* border: 1px solid red; */
+.form-group input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1rem;
+    color: #666;
+    padding: 10px 15px 10px 10px;
+    /* border: 1px solid red; */
 }
-.form-group{
+
+.form-group {
     padding-left: 10px;
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
 }
+
 .form-control:focus {
     color: #212529;
     background-color: #fff;
@@ -54,67 +56,8 @@ form {
     background-color: #292a73;
     border-radius: 3rem;
 }
-.bg-light {
-    background-color: #1a1b4b !important;
-}
 
-.estiloSublinhado {
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-}
-
-.estiloSublinhado:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #f7a400;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.estiloSublinhado:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-.navbar-light .navbar-brand {
-    color: #f1f1f1!important;
-}
-
-.nav-link {
-    color: #f1f1f1!important;
-}
-
-.navbar-collapse {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #1a1b4b;
-}
-body {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-footer {
-    background-color: #c9cce8;
-    bottom: 0;
-    margin-top: auto;
-}
-
-.nav-link-footer {
-    color: #1a1b4b;
-    text-decoration: none;
-}
-
-.nav-link-footer:hover {
-    color: #1a1b4b;
+img {
+    width: 80%;
+    padding-left: 90px;
 }
