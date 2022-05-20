@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #EDF2FB;
+}
+
 .intro {
     margin: 0 4em;
 }
