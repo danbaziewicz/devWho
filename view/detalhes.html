@@ -1,12 +1,224 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/headerEFooter.css">
+    <link rel="stylesheet" href="./assets/css/pagDetalhes.css">
+
+    <title>Página de detalhes</title>
 </head>
+
 <body>
-    <h1>Página Detalhes</h1>
+    <!-- PÁGINA DE DETALHES -->
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand estiloSublinhado" href="../index.html">Dev Who</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link estiloSublinhado" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link estiloSublinhado" href="../index.html">Detalhes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link estiloSublinhado" href="./cadastro.html">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link estiloSublinhado" href="./contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link estiloSublinhado" href="./login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MENTORIA SOFT -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <h1 class="fs-3">Mentoria de Soft Skills</h1>
+                    <p class="mb-1 descDetalhes fs-6">Temos um time especializado em preparação para entrevistas,
+                        desenvolvimento de um perfil
+                        Linkedin atrativo e avaliação curricular. Além disso, oferecemos oficinas de pitch,
+                        storytelling,
+                        inteligência emocional, metodologias ágeis, entre outros. </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/images/professor-illustration.svg" class="w-50">
+                </div>
+            </div>
+        </div>
+
+        <!-- MENTORIA TECH -->
+        <div class="container w-75">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="./assets/images/scrum-board.svg" class="w-50 ">
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <h1 class="fs-3">Mentoria Tech</h1>
+                    <p class="mb-1 descDetalhes fs-6">Temos um time especializado em desenvolvimento front e back end, focado
+                        na preparação
+                        para os principais testes práticos, além de revisão conceitual e aulas personalizadas, de acordo
+                        com
+                        a seu interesse. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- MENTORIA TECH -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <h1 class="fs-3">Mentoria Internacional</h1>
+                    <p class="mb-1 descDetalhes fs-6">Além de todos os itens acima, temos um time especializado em preparação
+                        para aplicações
+                        internacionais, com foco em preparação para testes e entrevistas para aplicações em big techs,
+                        em
+                        inglês. </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/images/the-cloud.svg" class="w-50">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- PÁGINA DE PLANOS -->
+    <section>
+        <div class="container text-center mt-5 mb-5">
+            <h1 class="display-4 titDetalhes">Detalhes</h1>
+            <p class="lead subtitDetalhes">Conheça melhor nossos serviços e pacotes</p>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-header text-center planoTitulo">
+                            <h4 class="font-weight-normal text-white">DevSocial</h4>
+                            <h1 class="text-white">R$39,90<small class="text-muted">/mês</small></h1>
+                        </div>
+                        <div class="card-body">
+                            <ul class="mt-3 mb-4">
+                                <li>Mentoria de soft skills</li>
+                                <li>Ofícina de currículos</li>
+                                <li>...</li>
+                                <li>Reuniões 1x/semana com nosso time Tech</li>
+                            </ul>
+                            <button
+                                class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto butAssinar">Assinar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-header text-center planoTitulo">
+                            <h4 class="font-weight-normal text-white">DevNacional</h4>
+                            <h1 class="text-white">R$99,90<small class="text-muted">/mês</small></h1>
+                        </div>
+                        <div class="card-body">
+                            <ul class="mt-3 mb-4">
+                                <li>Mentoria de soft skills</li>
+                                <li>Ofícina de currículos</li>
+                                <li>Simulação de entrevistas</li>
+                                <li>Reuniões 3x/semana com nosso time Tech</li>
+                            </ul>
+                            <button
+                                class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto butAssinar">Assinar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-header text-center planoTitulo">
+                            <h4 class="font-weight-normal text-white">DevInternacional</h4>
+                            <h1 class="text-white">R$149,90<small class="text-muted">/mês</small></h1>
+                        </div>
+                        <div class="card-body">
+                            <ul class="mt-3 mb-4">
+                                <li>Mentoria de soft skills</li>
+                                <li>Ofícina de currículos para Big Techs</li>
+                                <li>Simulação de entrevistas (PT/EN)</li>
+                                <li>Reuniões 5x/semana com nosso time Tech</li>
+                            </ul>
+                            <button
+                                class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto butAssinar">Assinar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <div class="d-flex flex-column h-100">
+        <footer class="w-100 py-4 flex-shrink-0 mt-3">
+            <div class="container py-4">
+                <div class="row gy-4 gx-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="h1">DW.</h5>
+                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt.</p>
+                        <p class="small text-muted mb-0">&copy; Copyrights. Todos os direitos reservados <a
+                                class="text-primary" href="#">https://github.com/danbaziewicz/devWho</a></p>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="mb-3">Links rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="nav-link-footer estiloSublinhado" href="#">Home</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="#">Cadastro</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="#">Contato</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="#">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="mb-3">Membros</h5>
+                        <ul class="navbar-nav">
+                            <li><a class="nav-link-footer estiloSublinhado" href="#">Alonso</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="#">Bárbara</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="#">Danylo</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="#">Edson</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="#">Letícia</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="mb-3">Newsletter</h5>
+                        <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt.</p>
+                        <form action="#">
+                            <div class="input-group mb-3">
+                                <input class="form-control" required type="text"
+                                    placeholder="Registre-se na Newsletter">
+                                <button type="submit" class="btn-submit">Registrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
-</html>gity
+
+</html>
