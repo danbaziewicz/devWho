@@ -40,7 +40,8 @@ form {
 
 .form-control:focus {
     color: #212529;
-    background-color: #fff;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 ::-webkit-scrollbar {
