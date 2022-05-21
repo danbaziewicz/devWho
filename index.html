@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./view/assets/css/index.css">
-    <link rel="stylesheet" href="../devWho/view/assets/css/headerEFooter.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/headerEFooter.css">
     <title>Home - Dev Who</title>
 </head>
 <body>
@@ -40,16 +40,33 @@
         </div>
     </nav>
 </header>
-    <div class="container">    
+    <div class="container-fluid" id="container">      
         <div class="row">
-            <div class="col-md-5">
-                <img class="img-fluid" id="imgLogo" src="./view/assets/images/Dev_Who.png">
+            <div class="col-md-3">
+                <img class="img-fluid" id="imgLogo" src="./images/Dev_Who Logo-fundo-transparente.png">
             </div>
-            <div class="col-md-7">
-                <p class="h3 mt-3" class="corTextoDevWho">O Dev Who é um site para aqueles que querem migrar de carreira mas não sabem como ou onde começar, e também para aqueles que querem dar um upgrade nas suas carreiras já na àrea de TI.
-                Aqui você será mentorado por Dev's experientes e já atuantes nesse mercado vasto da tecnologia.
-                Quer dar um Boom na sua carreira? Então não perca mais tempo!
-                Dev Who e você! Juntos, "passo a passo" pra você chegar mais longe!</p>                
+            <div class="col-md-9">
+                <div class="h6 mt-3" id="divTextoDevWho">
+                    <p>Olá, pessoa! Tudo bem? Não muito?</p>
+                    <p>É, eu entendo. Após mais de 3 anos de pandemia, muitas perdas humanas e materiais, crise econômica e até guerras, não é difícil se deixar levar por um sentimento de, no mínimo, frustração.</p>
+                    <p>Nós da Dev Who também estávamos nos sentindo assim. Éramos um grupo de pessoas jovens e sonhadoras, com formações diferentes e atuação diversa no mercado de trabalho. Mas vivíamos com cansaço e insatisfação, sentíamos falta de uma conexão maior com nossas carreiras e de um bom retorno financeiro.</p>
+                    <p>Foi nesse momento que começamos a ouvir falar de programação. O algoritmo do Google começou a sugerir pra gente termos como “back-end”, “front-end” e “full stack”. Nunca tínhamos ouvido falar disso, mas, como somos pessoas muito curiosas, pesquisamos sobre o assunto.</p>
+                    <p>Ainda com um pé atrás, mas cada vez mais atraídes pela área da programação, nos jogamos nos estudos de forma autodidata, e… batemos com a cara na parede. Descobrimos que não sabíamos por onde começar, que a internet é maravilhosa, mas tem MUITO conteúdo disperso, que tínhamos dificuldade para organizar uma rotina de estudos e não fazíamos ideia nem de como pedir ajuda.</p>
+                    <p>Calma, pessoa, não estamos dizendo que é impossível aprender programação por conta própria e se reinserir no mercado de trabalho. Estamos apenas compartilhando o fato - constatado por experiência própria e por pesquisas diversas - de que o caminho é mais fácil (ou menos difícil) quando temos alguém para nos orientar.</p>
+                    <p>A Dev Who surgiu da união de cinco pessoas que iniciaram sua transição de carreira para o desenvolvimento web e se depararam com dificuldades parecidas: não saber por onde começar, precisar de um feedback mas não saber com quem contar, falta de ferramentas para gerenciar tempo…</p>
+                    <p>Percebemos que ter uma mentoria individual e personalizada de acordo com as suas necessidades específicas faz toda a diferença. E é isso que a Dev Who oferece: orientação, dicas de estudo, feedback contínuo e completo sobre seus projetos pessoais, banco de questões e resolução de exercícios sobre lógica de programação, network e muito mais!</p>
+                    <p>Se a gente fosse um trecho de código, seríamos mais ou menos assim:</p>
+                    <p>const devWho = “mentoria individual e personalizada de qualidade”
+                    
+                        <br>function startCareerWebDev (you) {
+                        <br>if (you.length > 1 || you.indexOf(“think you can do by yourself”) > -1 {
+                        <br>return “good luck!”
+                        <br>} else if (you.length == 1 && you.indexOf(“need help”) > -1 {
+                        <br>you.push(devWho)
+                        <br>return “let’s go together!”
+                        }
+                        }</p>                   
+                </div>               
             </div>
         </div>
     </div>

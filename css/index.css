@@ -3,6 +3,10 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-.corTextoDevWho{
-    color: #f7a400;
+#divTextoDevWho > p {
+    color: #1a1b4b;
+}
+#container{
+    background-color: #EDF2FB;
+    width: 98%;
 }
