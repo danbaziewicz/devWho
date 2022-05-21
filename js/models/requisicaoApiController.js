@@ -35,5 +35,23 @@ class ModelViaCep {
         this.localidade = objCep.localidade;
         this.uf = objCep.uf;
     }
-
+    getCep() {
+        return this.cep
+    }
+    
+    getEstado() {
+        return this.uf
+    }
+    
+    getCidade() {
+        return this.localidade
+    }
+    
+    getBairro() {
+        return this.bairro
+    }
+    
+    getRua() {
+        return this.rua
+    }
 }
