@@ -16,8 +16,12 @@ class ModelViaCep {
                     this.filtraDados(objCep);
                     //retirar esse console log quando pronto
                     console.log(objCep)
-                    //imprime() deve estar ligado a view
-                    //this.imprime(objCep)
+                    //request.status é 200 mesmo quando é inválido.
+                    //testar com cep 84500000
+                    //retorna erro no console.
+                    //como tratar?
+                    console.log(request.status)
+                    //criar comunicação com a controller para imprimir(?)
                 } else{
                     console.log(request.status + "erro")
                     alert('CEP incorreto!')
@@ -27,9 +31,10 @@ class ModelViaCep {
             request.send();
         } else {
             //cep é inválido.
-            this.limpaForm();
             //retirar alert -> view
-            alert("Formato de CEP inválido.");
+            //alert("Formato de CEP inválido.");
+            const erro = new ControllerCadastro();
+            erro.imprimeErro();
         }
     }
 
