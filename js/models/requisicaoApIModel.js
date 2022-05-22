@@ -36,23 +36,19 @@ class ModelViaCep {
         return objCep;
     }
 
+    /*
     imprime(objCep){
         $('#inputEndereco').val(objCep.logradouro);
         $('#inputBairro').val(objCep.bairro);
         $('#inputCidade').val(objCep.localidade);
         $('#inputEstado').val(objCep.uf);
-    }
+    }*/
 
     validaCep() {
         const cepUser = $('#inputCEP').val();
         if(cepUser != '') {
             const validaCep = /^[0-9]{8}$/;
             if(validaCep.test(cepUser)) {
-                /*
-                $("#inputEndereco").val("...");
-                $("#inputBairro").val("...");
-                $("#inputCidade").val("...");
-                $("#inputEstado").val("...");*/
                 return true;
             }
         } else {
@@ -62,13 +58,14 @@ class ModelViaCep {
         
     }
 
+    /*
     limpaForm() {
         $('#inputCEP').val("");
         $('#inputEndereco').val("");
         $('#inputBairro').val("");
         $('#inputCidade').val("");
         $('#inputEstado').val("");
-    }
+    }*/
 
     filtraDados(request) {
         this.cep = request.cep;
