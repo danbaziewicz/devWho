@@ -1,13 +1,18 @@
+class ControllerCadastro {
+    adicionaCep() {
+        const dadosModel = new ModelViaCep()
+        dadosModel.requisicaoApi()
+    }
+}
+
 $('#inputCEP').keydown((event) => {
     if (event.which == 9) {
-        const valoresCep = new ModelViaCep()
-        valoresCep.requisicaoApi();
+    const dados = new ControllerCadastro()
+    dados.adicionaCep()
     }
 })
 
 $('#inputCEP').blur(() => {
-        const valoresCep = new ModelViaCep()
-        valoresCep.requisicaoApi();
+    const dados = new ControllerCadastro()
+    dados.adicionaCep()
 })
-
-
