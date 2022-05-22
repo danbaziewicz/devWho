@@ -14,8 +14,10 @@ class ModelViaCep {
                 if(request.status == 200) {
                     const objCep = this.processaResponse(request.responseText);
                     this.filtraDados(objCep);
+                    //retirar esse console log quando pronto
                     console.log(objCep)
-                    this.imprime(objCep)
+                    //imprime() deve estar ligado a view
+                    //this.imprime(objCep)
                 } else{
                     console.log(request.status + "erro")
                     alert('CEP incorreto!')
