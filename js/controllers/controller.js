@@ -5,10 +5,9 @@ $('#inputCEP').keydown((event) => {
     }
 })
 
-$('#inputCEP').blur((event) => {
-    if (event.which == 9) {
+$('#inputCEP').blur(() => {
         const valoresCep = new ModelViaCep()
         valoresCep.requisicaoApi();
-    }
 })
+
 
