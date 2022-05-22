@@ -1,4 +1,5 @@
 class ViewFormulario{
+    //tentar implemtnar essa funcionalidade com empty()
     limpaForm() {
         $('#inputCEP').val("");
         $('#inputEndereco').val("");
@@ -7,10 +8,13 @@ class ViewFormulario{
         $('#inputEstado').val("");
     }
 
-    imprime(objCep){
-        $('#inputEndereco').val(objCep.logradouro);
-        $('#inputBairro').val(objCep.bairro);
-        $('#inputCidade').val(objCep.localidade);
-        $('#inputEstado').val(objCep.uf);
+    //obj recebido da controller e passado para a view em 'dadosModel'
+    //dadosModel acessa os getters para devolver esses valores na tela.
+
+    imprime(dadosModel){
+        $('#inputEndereco').val(dadosModel.getRua());
+        $('#inputBairro').val(dadosModel.getBairro());
+        $('#inputCidade').val(dadosModel.getCidade());
+        $('#inputEstado').val(dadosModel.getEstado());
     }
 }
