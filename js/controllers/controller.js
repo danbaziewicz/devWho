@@ -1,8 +1,14 @@
 class ControllerCadastro {
     adicionaCep() {
-        const dadosModel = new ModelViaCep()
-        dadosModel.requisicaoApi()
+        const dadosModel = new ModelViaCep();
+        dadosModel.requisicaoApi();
+        console.log(`entrei na controller ${dadosModel.getRua()}`)
+
+        const view = new ViewFormulario();
+        view.imprime(dadosModel);
     }
+
+
 }
 
 $('#inputCEP').keydown((event) => {
