@@ -4,11 +4,17 @@ class ControllerCadastro {
         dadosModel.requisicaoApi();
         console.log(`entrei na controller ${dadosModel.getRua()}`)
 
+        //isolar em outro método
+        //pensar na comunicação com model.
         const view = new ViewFormulario();
         view.imprime(dadosModel);
+
     }
-
-
+    
+    imprimeErro() {
+        const erro = new ViewFormulario();
+        erro.imprimeErro();
+    }
 }
 
 $('#inputCEP').keydown((event) => {
