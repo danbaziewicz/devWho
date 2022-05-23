@@ -9,22 +9,16 @@ class ModelViaCep {
     requisicaoApi(){
         const cepUser = $('#inputCEP').val();
         if (this.validaCep() == true) {
-            const request = new XMLHttpRequest()
+            const request = new XMLHttpRequest();
             request.addEventListener('load',() => {
                 if(request.responseText != "{\n  \"erro\": \"true\"\n}") {
                     const objCep = this.processaResponse(request.responseText);
                     this.filtraDados(objCep);
-                    //retirar esse console log quando pronto
-                    console.log(objCep)
-                    console.log(request.error)
-                    console.log(request)
                     const limpa = new ControllerCadastro();
                     limpa.erroLimpa();
                 } else {
                     const erro = new ControllerCadastro();
                     erro.imprimeErro();
-                    //criar função para imprimir erro.
-                    alert('CEP incorreto!')
                 }
             })
             request.open('GET', `https://viacep.com.br/ws/${cepUser}/json/`, false);
@@ -59,22 +53,22 @@ class ModelViaCep {
     }
 
     getCep() {
-        return this.cep
+        return this.cep;
     }
     
     getEstado() {
-        return this.uf
+        return this.uf;
     }
     
     getCidade() {
-        return this.localidade
+        return this.localidade;
     }
     
     getBairro() {
-        return this.bairro
+        return this.bairro;
     }
     
     getRua() {
-        return this.rua
+        return this.rua;
     }
 }
