@@ -21,6 +21,21 @@ class ControllerCadastro {
         erro.imprimeErro();
         }
     }
+
+    emailValida() {
+        const valida = new Validacao();
+        valida.validaEmail();
+    }
+
+    imprimeStatusOk(){
+        const view = new ViewFormulario();
+        view.imprimeEmailValido();
+    }
+
+    imprimeStatusInvalido() {
+        const view = new ViewFormulario();
+        view.imprimeEmailInvalido();
+    }
 }
 
 $('#inputCEP').keydown((event) => {
@@ -33,4 +48,16 @@ $('#inputCEP').keydown((event) => {
 $('#inputCEP').blur(() => {
     const dados = new ControllerCadastro()
     dados.adicionaCep()
+})
+
+$('#inputEmail4').blur(() => {
+    const email = new ControllerCadastro()
+    email.emailValida();
+})
+
+$('#inputEmail4').keydown((event) => {
+    if (event.which == 9) {
+    const email = new ControllerCadastro()
+    email.emailValida();
+    }
 })
