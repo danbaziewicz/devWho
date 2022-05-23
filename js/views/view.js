@@ -12,4 +12,8 @@ class ViewFormulario{
     imprimeErro(){
         $('#campoErro').text('CEP inválido. Digite apenas números.')
     }
+
+    limpaErro() {
+        $('#campoErro').empty();
+    }
 }
