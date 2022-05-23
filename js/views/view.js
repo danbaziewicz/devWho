@@ -16,4 +16,12 @@ class ViewFormulario{
     limpaErro() {
         $('#campoErro').empty();
     }
+
+    imprimeEmailValido() {
+        $('#textVerificaEmail').text('Email válido.')
+    }
+
+    imprimeEmailInvalido () {
+        $('#textVerificaEmail').text('Por favor, digite um Email válido.')
+    }
 }
