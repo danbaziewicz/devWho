@@ -53,6 +53,12 @@ class Validacao {
         }
     }
 
+    verificaRG() {
+        this.getRG();
+        const rgReq = /([^\d{1,2}).?(\d{3}).?(\d{3})-?(\d{1}|X|x$])/;
+        return this.rg.match(rgReq) ? true : false;
+    }
+
     getEmail() {
         this.email = $('#inputEmail4').val();
     }
@@ -63,5 +69,9 @@ class Validacao {
 
     getConfirmacaoSenha() {
         this.confirmaSenha = $('#inputConfirmPassword4').val();
+    }
+
+    getRG() {
+        this.rg = $('#inputRG').val();
     }
 }
