@@ -23,4 +23,9 @@ class UserLoginView {
         $('#emailHelp').text('Email inválido, tente novamente.').css('color', 'red');
     }
 
+    imprimeRecSenha() {
+        $('#inputEmailLogin').val('');
+        $('#emailHelp').text('Requisição enviada! Cheque a caixa de entrada do seu Email.').css('color', 'green');
+    }
+
 }
