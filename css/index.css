@@ -26,7 +26,17 @@
     padding: 20px;
     margin-bottom: 10%;
     font-size: 22px;
+    color: #3a9efd;
 }
 .logoPqn {
     height: 180px; width: 180px;
+}
+#slide1 {
+    height: 240px;
+}
+#slide2 {
+    height: 240px;
+}
+#slide3 {
+    height: 240px;
 }
