@@ -10,8 +10,8 @@ form {
 }
 
 .form-row {
-    max-width: 500px;
-    min-height: 500px;
+    max-width: 700px;
+    min-height: 700px;
     margin: 80px auto;
     padding: 30px 30px 30px 30px;
     background-color: #ecf0f3;
@@ -59,6 +59,6 @@ form {
 }
 
 img {
-    width: 80%;
-    padding-left: 90px;
+    width: 65%;
+    padding-left: 190px;
 }
