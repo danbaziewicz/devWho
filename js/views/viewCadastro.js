@@ -39,4 +39,12 @@ class ViewFormulario {
         $('#textoConfirma').text('As senhas não conferem, tente novamente').css('color', 'red');
     }
 
+    imprimeRgOK(){
+        $('textRg').text('Rg válido.').css('color', 'green');
+    }
+
+    imprimeRgInvalido(){
+        $('textRg').text('Rg Inválido.').css('color', 'red');
+    }
+
 }
