@@ -32,3 +32,14 @@ $('#btn-google').click((e) => {
     const logar = new UserLoginController();
     logar.reqLoginOk();
 })
+
+$('#btn-rec-senha').click((e) => {
+    e.preventDefault();
+    const verifica = new UserLogin();
+    const imrpime = new UserLoginView();
+    if (verifica.verificaEmail() == true) {
+        imrpime.imprimeRecSenha();
+    } else {
+        imrpime.imrprimeEmailInvalido();
+    }
+})
