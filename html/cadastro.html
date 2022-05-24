@@ -44,9 +44,12 @@
             </div>
         </nav>
     </header>
+    <div class="row row-cols-md-2 row-cols-sm-1 divImg">
+        <img src="../images/cadastrosucess.png" alt="imagem cadastro realizado com sucesso." class="cadastroOk" id="cadastroOk">
+    </div>
         <form id="formulario">
             <div class="form-row mt-5 mb-5">
-                <img src="../images/devwho.png" alt="logo devwho página de cadastro">
+                <img src="../images/devwho.png" class="logoForm" alt="logo devwho página de cadastro">
                 <div class="form-group col-md-12">
                     <label for="inputNome4">Nome Completo</label>
                     <input type="text" class="form-control" id="inputNome4" placeholder="Nome">
@@ -68,7 +71,7 @@
                 </div>
                 <div class="form-group col-md-12">
                     <label for="inputRG">RG</label>
-                    <input type="text" class="form-control" id="inputRG">
+                    <input type="number" class="form-control" id="inputRG">
                     <span id="textRg"></span>
                 </div>
                 <div class="form-group col-md-12">
@@ -102,7 +105,8 @@
                     <label for="inputEstado">Estado</label>
                     <input type="text" class="form-control" id="inputEstado" readonly>
                 </div>
-                <button type="submit" class="btn mt-2 btn-primary">Entrar</button>
+                <span id="campos"></span><br>
+                <button type="submit" class="btn mt-2 btn-primary" id="entrar">Entrar</button>
             </div>
             </div>
         </form>
