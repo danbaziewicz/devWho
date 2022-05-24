@@ -34,6 +34,14 @@ body {
     color: #f1f1f1!important;
 }
 
+.navbar-toggler-icon{
+ background-color: #f1f1f1!important;
+}
+
+.navbar-toggler{
+    background-color: #f1f1f1!important;
+   }
+
 .nav-link {
     color: #f1f1f1!important;
 }
@@ -90,4 +98,21 @@ footer {
 
 .nav-link-footer:hover {
     color: #1a1b4b;
+}
+
+.btn-submit {
+    color: #fff;
+    background-color: #292a73;
+    border-color: #1a1b4b;
+    width: 30%;
+    font-weight: 600;
+    transition: .2s;
+    border-radius: 4px;
+    height: 39px;
+}
+
+.btn-submit:hover {
+    color: #fff;
+    background-color: #1a1b4b;
+    border-color: #292a73;
 }
