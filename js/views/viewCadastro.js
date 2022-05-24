@@ -40,11 +40,20 @@ class ViewFormulario {
     }
 
     imprimeRgOK(){
-        $('textRg').text('Rg válido.').css('color', 'green');
+        $('#textRg').text('Rg válido.').css('color', 'green');
     }
 
     imprimeRgInvalido(){
-        $('textRg').text('Rg Inválido.').css('color', 'red');
+        $('#textRg').text('Rg Inválido.').css('color', 'red');
+    }
+
+    removeItens() {
+        $('#formulario').hide();
+        $('#cadastroOk').attr("src", "../images/cadastrosucess.png").css('display', 'flex');
+    }
+
+    imprimeErroFinal() {
+        $('#campos').text('Por favor, preencha todos os campos.').css('color', 'red');
     }
 
 }
