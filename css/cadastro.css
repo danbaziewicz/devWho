@@ -4,6 +4,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 form {
     background-image: #ECF0F3;
     padding: 40px 30px 30px 30px;
@@ -58,7 +68,17 @@ form {
     border-radius: 3rem;
 }
 
-img {
+.divImg {
+    display: flex;
+    justify-content: center;
+}
+
+.cadastroOk {
+    display: none;
+    /* width: 70%; */
+}
+
+.logoForm {
     width: 65%;
     padding-left: 190px;
 }
