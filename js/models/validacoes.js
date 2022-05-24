@@ -1,8 +1,16 @@
 class Validacao {
     constructor() {
+        this.nome = '';
         this.email = '';
         this.senha = '';
         this.confirmaSenha = '';
+        this.rg = '';
+        this.cep = '';
+        this.endereco = '';
+        this.numero = '';
+        this.bairro = '';
+        this.cidade = '';
+        this.estado = '';
     }
 
     validaEmail() {
@@ -55,8 +63,32 @@ class Validacao {
 
     verificaRG() {
         this.getRG();
-        const rgReq = /([^\d{1,2}).?(\d{3}).?(\d{3})-?(\d{1}|X|x$])/;
-        return this.rg.match(rgReq) ? true : false;
+        return this.rg.length == 9 ? true : false;
+    }
+
+    getNome() {
+        this.nome = $('#inputNome4').val();
+    }
+    getCep() {
+        this.cep = $('#inputCEP').val();
+    }
+    getEndereco() {
+        this.endereco = $('#inputEndereco').val();
+    }
+    getNumero() {
+        this.numero = $('#inputNumber').val();
+    }
+
+    getBairro() {
+        this.bairro = $('#inputBairro').val();
+    }
+
+    getCidade() {
+        this.cidade = $('#inputCidade').val();
+    }
+
+    getEstado() {
+        this.estado = $('#inputEstado').val();
     }
 
     getEmail() {
@@ -73,5 +105,26 @@ class Validacao {
 
     getRG() {
         this.rg = $('#inputRG').val();
+    }
+
+
+    confirmacao() {
+        this.getNome()
+        this.getEmail()
+        this.getSenha()
+        this.getConfirmacaoSenha()
+        this.getRG()
+        this.getCep()
+        this.getEndereco()
+        this.getNumero()
+        this.getBairro()
+        this.getBairro()
+        this.getEstado()
+
+        if ((this.nome && this.email !== '') && (this.senha && this.confirmaSenha !== '') && (this.rg && this.cep !== '') && (this.endereco && this.numero !== '') && (this.bairro && this.estado !== '')) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
