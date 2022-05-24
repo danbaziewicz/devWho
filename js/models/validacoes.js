@@ -44,7 +44,7 @@ class Validacao {
     comparaSenhas() {
         this.getSenha();
         this.getConfirmacaoSenha();
-        if (this.senha == this.confirmaSenha) {
+        if ((this.senha == this.confirmaSenha) && (this.senha != "")) {
             const reqOk = new ControllerCadastro();
             reqOk.imprimeConfirmOk();
         } else {
