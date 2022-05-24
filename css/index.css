@@ -22,11 +22,27 @@
     color: #1a1b4b;
     text-align: center;
 }
-.divBtnInsc > button {
-    padding: 20px;
+.divBtnInsc {
+    margin-top: 5%;
     margin-bottom: 10%;
+}
+.divBtnInsc > a {
+    padding: 20px;    
+    border: solid 2px #f7a400;
+    border-radius: 20px;
     font-size: 22px;
-    color: #1a1b4b;
+    background-color: #1a1b4b;
+    color: #EDF2FB;
+    text-decoration-line: none;
+}
+.divBtnInsc > a:hover{
+    padding: 20px;
+    border: solid 2px #1a1b4b;
+    border-radius: 20px;
+    font-size: 22px;
+    background-color:#f7a400;
+    color:#EDF2FB;
+    text-decoration-line: none;
 }
 .logoPqn {
     height: 180px; width: 180px;
@@ -38,5 +54,5 @@
     height: 240px;
 }
 #slide3 {
-    height: 240px;
+    height: 240px; 
 }
