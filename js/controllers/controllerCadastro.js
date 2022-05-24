@@ -62,6 +62,11 @@ class ControllerCadastro {
         const confirmDiv = new ViewFormulario();
         confirmDiv.imprimeSenhasDivergentes();
     }
+    
+    validaRg(){
+        const validaRg = new Validacao();
+        validaRg.verificaRG();
+    }
 }
 
 $('#inputCEP').keydown((event) => {
