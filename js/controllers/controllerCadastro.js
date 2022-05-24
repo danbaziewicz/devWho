@@ -65,7 +65,12 @@ class ControllerCadastro {
     
     validaRg(){
         const validaRg = new Validacao();
-        validaRg.verificaRG();
+        const imrpimeRg = new ViewFormulario();
+        if (validaRg.verificaRG() == true) {
+            imrpimeRg.imprimeRgOK();
+        } else {
+            imrpimeRg.imprimeRgInvalido();
+        }
     }
 }
 
@@ -110,9 +115,25 @@ $('#inputConfirmPassword4').blur(() => {
     valida.validaConfirmacao();
 })
 
+$('#inputRG').blur(() => {
+    const valida = new ControllerCadastro()
+    valida.validaRg();
+})
+
 $('#inputConfirmPassword4').keydown((event) => {
     if (event.which == 9) {
         const valida = new ControllerCadastro()
         valida.validaConfirmacao();
+    }
+})
+
+$('#entrar').click((e) => {
+    e.preventDefault();
+    const verifica = new Validacao();
+    const imprime = new ViewFormulario();
+    if(verifica.confirmacao() == true) {
+        imprime.removeItens();
+    } else {
+        imprime.imprimeErroFinal();
     }
 })
