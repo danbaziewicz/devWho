@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #EDF2FB;
+}
+
 .intro {
     margin: 0 4em;
 }
@@ -15,7 +19,7 @@
 }
 
 .card-person {
-    max-width: 18rem;
+    max-width: 20rem;
     border-color: #000036;
     box-shadow: 2px 3px #000036;
     transition-timing-function: ease;
@@ -23,7 +27,7 @@
 }
 
 .card-person:hover {
-    max-width: 20rem;
+    max-width: 22rem;
 }
 
 .background {
