@@ -3,3 +3,56 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+#divTextoDevWho > p {
+    color: #1a1b4b;
+}
+#container {
+    background-color: #EDF2FB;
+    width: 98%;
+}
+#divChamada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px #1a1b4b;
+    background-color:#EDF2FB;
+    border-radius: 10px;    
+}
+.divTextoChmd > p {
+    color: #1a1b4b;
+    text-align: center;
+}
+.divBtnInsc {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.divBtnInsc > a {
+    padding: 20px;    
+    border: solid 2px #f7a400;
+    border-radius: 20px;
+    font-size: 22px;
+    background-color: #1a1b4b;
+    color: #EDF2FB;
+    text-decoration-line: none;
+}
+.divBtnInsc > a:hover{
+    padding: 20px;
+    border: solid 2px #1a1b4b;
+    border-radius: 20px;
+    font-size: 22px;
+    background-color:#f7a400;
+    color:#EDF2FB;
+    text-decoration-line: none;
+}
+.logoPqn {
+    height: 180px; width: 180px;
+}
+#slide1 {
+    height: 240px;
+}
+#slide2 {
+    height: 240px;
+}
+#slide3 {
+    height: 240px; 
+}
