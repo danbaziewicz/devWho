@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/cadastro.css">
-    <link rel="stylesheet" href="./assets/css/headerEFooter.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/headerEFooter.css">
     <link rel="icon" type="image/png" sizes="16x16"  href="../images/favicon.png">
     <title>Dev Who | Cadastro </title>
 </head>
@@ -45,46 +45,69 @@
             </div>
         </nav>
     </header>
-        <form>
+    <div class="row row-cols-md-2 row-cols-sm-1 divImg">
+        <img src="../images/cadastrosucess.png" alt="imagem cadastro realizado com sucesso." class="cadastroOk" id="cadastroOk">
+    </div>
+        <form id="formulario">
             <div class="form-row mt-5 mb-5">
-                <img src="../images/devwho.png">
-                <div class="form-group col-md-10">
+                <img src="../images/devwho.png" class="logoForm" alt="logo devwho página de cadastro">
+                <div class="form-group col-md-12">
                     <label for="inputNome4">Nome Completo</label>
                     <input type="text" class="form-control" id="inputNome4" placeholder="Nome">
                 </div>
-                <div class="form-group col-md-10">
+                <div class="form-group col-md-12">
                     <label for="inputEmail4">Email</label>
                     <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    <span id="textVerificaEmail"></span>
                 </div>
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-12">
                     <label for="inputPassword4">Senha</label>
                     <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                    <span id="textoSenha"></span>
                 </div>
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-12">
                     <label for="inputConfirmPassword4">Confirmação De Senha</label>
                     <input type="password" class="form-control" id="inputConfirmPassword4" placeholder="Senha">
+                    <span id="textoConfirma"></span>
                 </div>
-                <div class="form-group col-md-5">
+                <div class="form-group col-md-12">
+                    <label for="inputRG">RG</label>
+                    <input type="number" class="form-control" id="inputRG">
+                    <span id="textRg"></span>
+                </div>
+                <div class="form-group col-md-12">
                     <label for="inputCEP">CEP</label>
                     <input type="text" class="form-control" id="inputCEP">
+                    <span id="campoErro"></span>
                 </div>
-                <div class="form-group col-md-10">
+                <div>
+                <div class="form-group col-md-12">
                     <label for="inputAddress">Endereço</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+                    <input type="text" class="form-control" id="inputEndereco" placeholder="Rua dos Bobos" readonly>
                 </div>
-                <div class="form-group col-md-10">
+                <div class="form-group col-md-12">
+                    <label for="inputNumber">Número</label>
+                    <input type="text" class="form-control" id="inputNumber" placeholder="nº 0">
+                </div>
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="inputCity">Bairro</label>
+                    <input type="text" class="form-control" id="inputBairro" readonly>
+                </div>
+                <div class="form-group col-md-12">
                     <label for="inputAddress2">Complemento</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, etc.">
+                    <input type="text" class="form-control" id="inputComplemento" placeholder="Apartamento, casa, etc.">
                 </div>
-                <div class="form-group col-md-8">
+                <div class="form-group col-md-12">
                     <label for="inputCity">Cidade</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <input type="text" class="form-control" id="inputCidade" readonly>
                 </div>
-                <div class="form-group col-md-8">
+                <div class="form-group col-md-12">
                     <label for="inputEstado">Estado</label>
-                    <input type="text" class="form-control" id="inputEstado">
+                    <input type="text" class="form-control" id="inputEstado" readonly>
                 </div>
-                <button type="submit" class="btn mt-2 btn-primary">Entrar</button>
+                <span id="campos"></span><br>
+                <button type="submit" class="btn mt-2 btn-primary" id="entrar">Entrar</button>
             </div>
             </div>
         </form>
@@ -137,9 +160,13 @@
                 </div>
             </footer>
         </div>
+
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="../js/views/viewCadastro.js"></script>
+        <script src="../js/models/validacoes.js"></script>
         <script src="../js/models/requisicaoApIModel.js"></script>
-        <script src="../js/controllers/controller.js"></script>
+        <script src="../js/controllers/controllerCadastro.js"></script>
+
 </body>
 
 </html>

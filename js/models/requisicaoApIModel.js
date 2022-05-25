@@ -9,21 +9,23 @@ class ModelViaCep {
     requisicaoApi(){
         const cepUser = $('#inputCEP').val();
         if (this.validaCep() == true) {
-            const request = new XMLHttpRequest()
+            const request = new XMLHttpRequest();
             request.addEventListener('load',() => {
-                if(request.status == 200) {
+                if(request.responseText != "{\n  \"erro\": \"true\"\n}") {
                     const objCep = this.processaResponse(request.responseText);
                     this.filtraDados(objCep);
-                    console.log(objCep)
+                    const limpa = new ControllerCadastro();
+                    limpa.erroLimpa();
+                } else {
+                    const erro = new ControllerCadastro();
+                    erro.imprimeErro();
                 }
             })
             request.open('GET', `https://viacep.com.br/ws/${cepUser}/json/`, false);
             request.send();
         } else {
-            //cep é inválido.
-            limpaForm();
-            //retirar alert -> view
-            alert("Formato de CEP inválido.");
+            const erro = new ControllerCadastro();
+            erro.imprimeErro();
         }
     }
 
@@ -37,24 +39,9 @@ class ModelViaCep {
         if(cepUser != '') {
             const validaCep = /^[0-9]{8}$/;
             if(validaCep.test(cepUser)) {
-                $("#inputEndereco").val("...");
-                $("#inputBairro").val("...");
-                $("#inputCidade").val("...");
-                $("#inputEstado").val("...");
                 return true;
             }
-        } else {
-            //retirar alert -> view
-            alert("Formato de CEP vazio.");
         }
-        
-    }
-
-    limpaForm() {
-        $("#inputEndereco").val("");
-        $("#inputBairro").val("");
-        $("#inputCidade").val("");
-        $("#inputEstado").val("");
     }
 
     filtraDados(request) {
@@ -66,22 +53,22 @@ class ModelViaCep {
     }
 
     getCep() {
-        return this.cep
+        return this.cep;
     }
     
     getEstado() {
-        return this.uf
+        return this.uf;
     }
     
     getCidade() {
-        return this.localidade
+        return this.localidade;
     }
     
     getBairro() {
-        return this.bairro
+        return this.bairro;
     }
     
     getRua() {
-        return this.rua
+        return this.rua;
     }
 }

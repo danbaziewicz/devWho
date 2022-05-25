@@ -4,14 +4,24 @@
     font-family: 'Poppins', sans-serif;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 form {
     background-image: #ECF0F3;
     padding: 40px 30px 30px 30px;
 }
 
 .form-row {
-    max-width: 500px;
-    min-height: 500px;
+    max-width: 700px;
+    min-height: 700px;
     margin: 80px auto;
     padding: 30px 30px 30px 30px;
     background-color: #ecf0f3;
@@ -40,7 +50,8 @@ form {
 
 .form-control:focus {
     color: #212529;
-    background-color: #fff;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 ::-webkit-scrollbar {
@@ -57,7 +68,17 @@ form {
     border-radius: 3rem;
 }
 
-img {
-    width: 80%;
-    padding-left: 90px;
+.divImg {
+    display: flex;
+    justify-content: center;
+}
+
+.cadastroOk {
+    display: none;
+    /* width: 70%; */
+}
+
+.logoForm {
+    width: 65%;
+    padding-left: 190px;
 }
