@@ -20,27 +20,26 @@ Site desenvolvido para a finalização do módulo II, do curso de Desenvolviment
 <!--te-->
 
 ## 👷‍♀️ Status do projeto
----
+
 <h3 align='center'> 
 	 🚀Finalizado
 </h3><br>
 
 
 ## 🎯 Objetivo
----
 
 Colocar em prática os conhecimentos do módulo II de desenvolvimento frontend, colocando em prática todos as funcionalidades aprendidas até o momento, com o desenvolvimento, em grupo, de um site completo.
 
 
 ## ⚙️ Funcionalidades
----
+
 - [x] Cadastro de usuário
 - [x] Busca de endereço a partir do site
 - [x] Página de recuperação de senha
 - [x] Validação de entradas(senha/e-mail/CEP)
 
 ##  🛠️ Tecnologias utilizadas
----
+
 ### **Website**
 <div style ="display:inline_block"><br/>
     <img align = 'center' alt='html5' src = 'https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white'>
@@ -50,7 +49,7 @@ Colocar em prática os conhecimentos do módulo II de desenvolvimento frontend, 
 
 
 ##  🛠️ Contruído com
----
+
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [API Via CEP](https://viacep.com.br/)
 * [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
@@ -59,7 +58,7 @@ Colocar em prática os conhecimentos do módulo II de desenvolvimento frontend, 
 
 
 ##  🤓 Desenvolvido por
----
+
 <table align='center'>
   <tr>
     <td align="center"><a href="https://github.com/lelaranja"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/93409210?v=4" width="100px;" alt=""/><br /><sub><b>Letícia Laranja</b></sub></a><br /><a href="https://github.com/lelaranja" title="Letícia">🍊</a></td>
