@@ -53,3 +53,15 @@ main {
     background-color: #1a1b4b;
     border-color: #292a73;
 }
+
+/* Voltar ao topo */
+#arrowUp{
+    text-decoration: none;
+    color:#f7a400;
+    background-color: #1a1b4b;
+    padding:8px;
+    position:fixed;
+    right:8px;
+    bottom:8px;
+    box-shadow: 1px 1px 2px #333;
+}
