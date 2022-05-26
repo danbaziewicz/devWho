@@ -46,3 +46,11 @@ body {
     position: absolute;
     bottom: 0;
 }
+
+.bullet {
+  list-style: none;
+}
+
+.bullet::before {
+  content: '⚡️'
+}
