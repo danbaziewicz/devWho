@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./images/devWho-bg-transparent.png" width="350" title="hover text">
+    <img src="./images/bannerDevWho.svg" width="350" title="hover text">
 </p>
 <h1 align="center">DevWho | Mentorias</h1>
 
