@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/esqueciMinhaSenha.css">
-    <link rel="stylesheet" href="./assets/css/headerEFooter.css">
+    <link rel="stylesheet" href="../css/esqueciMinhaSenha.css">
+    <link rel="stylesheet" href="../css/headerEFooter.css">
     <link rel="icon" type="image/png" sizes="16x16"  href="../images/favicon.png">
-    <title>Recuperar senha - Dev Who</title>
+    <title>Recuperar senha | Dev Who</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                             <a class="nav-link estiloSublinhado" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link estiloSublinhado" href="../index.html">Detalhes</a>
+                            <a class="nav-link estiloSublinhado" href="./detalhes.html">Detalhes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link estiloSublinhado" href="./cadastro.html">Cadastro</a>
@@ -48,17 +48,17 @@
     <main>
         <div class="container row row-cols-md-2 row-cols-sm-1">
             <div class="mb-3 col-sm-10 col-md-6 divImg">
-                <img class="recoverPageImg" src="./assets/images/redefinirSenhaPNG.png" alt="imagem png pag de login">
+                <img class="recoverPageImg" src="../images/redefinirSenhaPNG.png" alt="imagem png pag de login">
             </div>
             <form class="formStyle">
             <div class="mb-3 col-12">
                 <h3 class="tituloH3Login mt-4">Redefinir senha</h3>
                 <p>Você receberá uma confirmação por e-mail para alterar sua senha.</p>
                 <label for="exampleInputEmail1" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="inputEmailLogin" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text">Nunca compartilharemos seu email com ninguém.</div>
             </div>
-            <button type="submit" class="mt-3 btn-submit">Enviar</button>
+            <button type="submit" class="mt-3 btn-submit" id="btn-rec-senha">Enviar</button>
         </form>
         
         </div>
@@ -71,35 +71,33 @@
                 <div class="row gy-4 gx-5">
                     <div class="col-lg-4 col-md-6">
                         <h5 class="h1">DW.</h5>
-                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt.</p>
-                        <p class="small text-muted mb-0">&copy; Copyrights. Todos os direitos reservados <a
-                                class="text-primary" href="#">https://github.com/danbaziewicz/devWho</a></p>
+                        <p class="small">Te ajudamos a se tornar o desenvolvedor que você sempre sonhou.</p>
+                        <p class="small text-muted mb-0">&copy; Copyrights. Todos os direitos reservados <br><a
+                            class="nav-link-footer estiloSublinhado" href="https://github.com/danbaziewicz/devWho">Dev Who | 2022</a></p>
                     </div>
                     <div class="col-lg-2 col-md-6">
                         <h5 class="mb-3">Links rápidos</h5>
                         <ul class="list-unstyled">
-                            <li><a class="nav-link-footer estiloSublinhado" href="#">Home</a></li>
-                            <li><a class="nav-link-footer estiloSublinhado" href="#">Detalhes</a></li>
-                            <li><a class="nav-link-footer estiloSublinhado" href="#">Cadastro</a></li>
-                            <li><a class="nav-link-footer estiloSublinhado" href="#">Contato</a></li>
-                            <li><a class="nav-link-footer estiloSublinhado" href="#">Login</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="../index.html">Home</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="./detalhes.html">Detalhes</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="./cadastro.html">Cadastro</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="./contato.html">Contato</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="./login.html">Login</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-md-6">
                         <h5 class="mb-3">Membros</h5>
                         <ul class="navbar-nav">
-                            <li><a class="nav-link-footer estiloSublinhado" href="#">Alonso</a></li>
-                            <li><a class="nav-link-footer estiloSublinhado" href="#">Bárbara</a></li>
-                            <li><a class="nav-link-footer estiloSublinhado" href="#">Danylo</a></li>
-                            <li><a class="nav-link-footer estiloSublinhado" href="#">Edson</a></li>
-                            <li><a class="nav-link-footer estiloSublinhado" href="#">Letícia</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="https://linktr.ee/dev_who">Alonso</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="https://linktr.ee/dev_who">Bárbara</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="https://linktr.ee/dev_who">Danylo</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="https://linktr.ee/dev_who">Edson</a></li>
+                            <li><a class="nav-link-footer estiloSublinhado" href="https://linktr.ee/dev_who">Letícia</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <h5 class="mb-3">Newsletter</h5>
-                        <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt.</p>
+                        <p class="small text-muted">Fique por dentro de todas as novidades da DevWho e do setor tech.</p>
                         <form action="#">
                             <div class="input-group mb-3">
                                 <input class="form-control" required type="text"
@@ -116,7 +114,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>    
+        <script src="../js/views/viewLogin.js"></script>
+        <script src="../js/models/modelLogin.js"></script>
+        <script src="../js/controllers/controllerLogin.js"></script>
 </body>
 
 </html>
