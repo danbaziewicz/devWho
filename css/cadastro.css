@@ -78,11 +78,11 @@ form {
 .divImg {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .cadastroOk {
     display: none;
-    /* width: 70%; */
 }
 
 .logoForm {
