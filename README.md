@@ -13,10 +13,10 @@ Site desenvolvido para a finalização do módulo II, do curso de Desenvolviment
 <!--ts-->
    * [Status do projeto](#status-projeto)
    * [Objetivo](#-objetivo)
-   * [Funcionalidades](#funcionalidades)
-   * [Tecnologias utilizadas](#tecnologias)
-   * [Construído com](#construido-com)
-   * [Desenvolvido por](#desenvolvido)
+   * [Funcionalidades](#%EF%B8%8F-funcionalidades)
+   * [Tecnologias utilizadas](#%EF%B8%8F-tecnologias-utilizadas)
+   * [Construído com](#%EF%B8%8F-construído-com)
+   * [Desenvolvido por](#-desenvolvido-por)
 <!--te-->
 
 ## 👷‍♀️ Status do projeto
@@ -48,7 +48,7 @@ Colocar em prática os conhecimentos do módulo II de desenvolvimento frontend, 
 </div><br>
 
 
-##  🛠️ Contruído com
+##  🛠️ Construído com
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [API Via CEP](https://viacep.com.br/)
