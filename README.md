@@ -11,7 +11,7 @@ Site desenvolvido para a finalização do módulo II, do curso de Desenvolviment
 
 # Tabela de conteúdos
 <!--ts-->
-   * [Status do projeto](#status-projeto)
+   * [Status do projeto](#%EF%B8%8F-status-do-projeto)
    * [Objetivo](#-objetivo)
    * [Funcionalidades](#%EF%B8%8F-funcionalidades)
    * [Tecnologias utilizadas](#%EF%B8%8F-tecnologias-utilizadas)
