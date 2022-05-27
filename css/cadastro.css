@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #edf2fb;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -38,7 +42,6 @@ form {
     font-size: 1rem;
     color: #666;
     padding: 10px 15px 10px 10px;
-    /* border: 1px solid red; */
 }
 
 .form-group {
@@ -52,6 +55,10 @@ form {
     color: #212529;
     background-color: transparent;
     box-shadow: none;
+}
+
+.form-control:read-only {
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar {
@@ -71,11 +78,11 @@ form {
 .divImg {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .cadastroOk {
     display: none;
-    /* width: 70%; */
 }
 
 .logoForm {
